@@ -43,6 +43,7 @@ $(document).ready(() => {
   $('#edit-character-form').on('submit', (e) => {
 
     e.preventDefault();
+    //$container.empty();
     let idCharacter = $('#update-chr-id').val();
     let name = $('#update-name').val();
     let occupation = $('#update-occupation').val();
@@ -62,7 +63,7 @@ $(document).ready(() => {
 
   $('#new-character-form').on('submit', (e) => {
       e.preventDefault();
-      $container.empty();
+
       let name = $('#create-name').val();
       let occupation = $('#create-occupation').val();
       let debt = $('#create-debt').val() === "on" ? true : false;
